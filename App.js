@@ -3,14 +3,9 @@ import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TestStackNav from './screens/BrowseStackNavigator';
+import HomeScreen from './screens/Home';
 
-const HomeScreen = () => {
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-};
+
 
 const SettingsScreen = () => {
   return (
@@ -20,9 +15,6 @@ const SettingsScreen = () => {
   );
 };
 const Tab = createBottomTabNavigator()
-
-
-
 
 const App = () => {
   return (
